@@ -1,16 +1,57 @@
+<!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="card">
+      <h1>Simple Interest Calculator</h1>
+      <label>Amount</label>
+      <input type="number" id="principal" class="amount-box" />
+      <br />
+      <label>Interest Rate</label>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        step="3.5"
+        label="value"
+        value="0"
+        oninput="num.value = this.value"
+        id="rate"
+      />
+      <output id="num">0</output>
+      <a>%</a>
+      <br />
+      <label>No. of Years</label>
+      <input type="number" id="years" min="0" class="year-box" />
+      <br />
+      <button onclick="compute()">Compute Interest</button>
+      <br />
+      <div class="result">
+        <div>
+          <p id="principcipaText" class="margin__p"></p>
+          <p id="principalNumber" class="color__background"></p>
+          <p id="commaText"></p>
+        </div>
+        <div>
+          <p id="rateText" class="margin__p"></p>
+          <p id="rateNumber" class="color__background"></p>
+          <p id="percentText"></p>
+        </div>
+        <div>
+          <p id="resltText" class="margin__p"></p>
+          <p id="result" class="color__background"></p>
+          <p id="commaText2"></p>
+        </div>
+        <div>
+          <p id="yearText" class="margin__p"></p>
+          <p id="numberOfYears" class="color__background"></p>
+        </div>
+      </div>
+      <br />
+      <a class="aclass">© Everyone Can Get Rich</a>
+    </div>
+  </body>
 </html>

@@ -1,4 +1,107 @@
-body {background-color:tan;}
-h1{color:green;}
+/* body {
+  background-color: black;
+}
+.card {
+  background-color: rgb(248, 247, 245);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.card-row {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.amount-box {
+  width: 100px;
+  height: 20px;
+}
+
+.year-box {
+  width: 50px;
+  height: 20px;
+}
+
+h1 {
+  color: rgb(125, 131, 125);
+}
+
+button {
+  width: 120;
+  height: 20;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  margin: 8px;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
+#card {
+  border-radius: 20px;
+  background-color: white;
+  width: 30rem;
+  height: auto;
+  margin-top: 20px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 500;
+}
+h1 {
+  color: rgb(125, 131, 125);
+  text-align: center;
+  font-family: Georgia, serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 120px;
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+
+#years {
+  width: 40px;
+}
+#principal {
+  width: 140px;
+}
+.aclass {
+  margin: 10px;
+}
+
+p {
+  display: inline;
+}
+.margin__p {
+  display: inline;
+  margin-left: 70px;
+}
+
+.color__background {
+  background-color: yellow;
+}
